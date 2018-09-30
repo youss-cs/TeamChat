@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15E60B721611F510068FA1A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E60B621611F510068FA1A /* ChannelVC.swift */; };
+		A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E60B821611F5A0068FA1A /* ChatVC.swift */; };
 		A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338021610F0A0029060F /* AppDelegate.swift */; };
-		A1F2338321610F0A0029060F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338221610F0A0029060F /* ViewController.swift */; };
 		A1F2338621610F0A0029060F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338421610F0A0029060F /* Main.storyboard */; };
 		A1F2338821610F0C0029060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338721610F0C0029060F /* Assets.xcassets */; };
 		A1F2338B21610F0C0029060F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338921610F0C0029060F /* LaunchScreen.storyboard */; };
@@ -18,9 +19,10 @@
 /* Begin PBXFileReference section */
 		1A1005AF7648943BB45FDB3D /* Pods-TeamChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamChat/Pods-TeamChat.debug.xcconfig"; sourceTree = "<group>"; };
 		672CAFBE1FFCE4170387DD6F /* Pods-TeamChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamChat/Pods-TeamChat.release.xcconfig"; sourceTree = "<group>"; };
+		A15E60B621611F510068FA1A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		A15E60B821611F5A0068FA1A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		A1F2337D21610F0A0029060F /* TeamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F2338021610F0A0029060F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1F2338221610F0A0029060F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1F2338521610F0A0029060F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1F2338721610F0C0029060F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F2338A21610F0C0029060F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A15E60B321611EFD0068FA1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A15E60B621611F510068FA1A /* ChannelVC.swift */,
+				A15E60B821611F5A0068FA1A /* ChatVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A15E60B421611F080068FA1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A15E60B521611F0A0068FA1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A1F2337421610F0A0029060F = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +103,10 @@
 		A1F2337F21610F0A0029060F /* TeamChat */ = {
 			isa = PBXGroup;
 			children = (
+				A15E60B521611F0A0068FA1A /* Model */,
+				A15E60B421611F080068FA1A /* View */,
+				A15E60B321611EFD0068FA1A /* Controller */,
 				A1F2338021610F0A0029060F /* AppDelegate.swift */,
-				A1F2338221610F0A0029060F /* ViewController.swift */,
 				A1F2338421610F0A0029060F /* Main.storyboard */,
 				A1F2338721610F0C0029060F /* Assets.xcassets */,
 				A1F2338921610F0C0029060F /* LaunchScreen.storyboard */,
@@ -208,7 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F2338321610F0A0029060F /* ViewController.swift in Sources */,
+				A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */,
+				A15E60B721611F510068FA1A /* ChannelVC.swift in Sources */,
 				A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
