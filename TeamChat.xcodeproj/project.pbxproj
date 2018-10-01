@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A15E60B721611F510068FA1A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E60B621611F510068FA1A /* ChannelVC.swift */; };
 		A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E60B821611F5A0068FA1A /* ChatVC.swift */; };
+		A1AC254A21625DB900F41280 /* GradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC254921625DB900F41280 /* GradienView.swift */; };
 		A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338021610F0A0029060F /* AppDelegate.swift */; };
 		A1F2338621610F0A0029060F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338421610F0A0029060F /* Main.storyboard */; };
 		A1F2338821610F0C0029060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338721610F0C0029060F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		672CAFBE1FFCE4170387DD6F /* Pods-TeamChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamChat/Pods-TeamChat.release.xcconfig"; sourceTree = "<group>"; };
 		A15E60B621611F510068FA1A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		A15E60B821611F5A0068FA1A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		A1AC254921625DB900F41280 /* GradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienView.swift; sourceTree = "<group>"; };
 		A1F2337D21610F0A0029060F /* TeamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F2338021610F0A0029060F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F2338521610F0A0029060F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		A15E60B521611F0A0068FA1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A1AC254921625DB900F41280 /* GradienView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */,
+				A1AC254A21625DB900F41280 /* GradienView.swift in Sources */,
 				A15E60B721611F510068FA1A /* ChannelVC.swift in Sources */,
 				A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */,
 			);

@@ -15,6 +15,7 @@ class ChatVC: UIViewController {
         super.viewDidLoad()
 
         SideMenuManager.default.menuFadeStatusBar = false
+        SideMenuManager.default.menuWidth = self.view.bounds.width - 40
     }
     
 
