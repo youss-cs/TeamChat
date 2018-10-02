@@ -12,7 +12,9 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "Login"
+    }
+    
+    @IBAction func createAccPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: TO_CREATE_ACC, sender: nil)
     }
 }
