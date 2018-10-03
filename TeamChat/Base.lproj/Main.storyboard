@@ -156,7 +156,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-5y-g7n">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-5y-g7n" customClass="RoundedButton" customModule="TeamChat" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="260" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.62352941176470589" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -291,7 +291,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-u3-PxP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-u3-PxP" customClass="RoundedButton" customModule="TeamChat" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="577" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -299,9 +299,12 @@
                                     <constraint firstAttribute="width" constant="250" id="yGI-LF-VTH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccPressed:" destination="Crd-iX-Zcg" eventType="touchUpInside" id="N3r-IJ-BzH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzI-j4-nMB">
                                 <rect key="frame" x="137.5" y="290" width="100" height="130"/>
@@ -312,6 +315,9 @@
                                 <state key="normal" title="Choose avatar">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ChooseAvatarPressed:" destination="Crd-iX-Zcg" eventType="touchUpInside" id="HYJ-uL-Vhx"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="oqJ-kL-N6Y">
                                 <rect key="frame" x="62.5" y="123" width="250" height="127"/>
@@ -366,6 +372,9 @@
                                 <state key="normal" title="Generate backgroud color">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="generateBGColorPressed:" destination="Crd-iX-Zcg" eventType="touchUpInside" id="k3b-YT-bSK"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="A5G-Hw-ul6">
                                 <rect key="frame" x="137.5" y="290" width="100" height="100"/>
@@ -394,6 +403,12 @@
                         <viewLayoutGuide key="safeArea" id="Hyk-eI-lbH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create account" id="rOf-B9-Moo"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="HLR-cu-gCf" id="BDF-CK-h6a"/>
+                        <outlet property="passwordTxt" destination="FZ7-S9-fm6" id="BAE-RM-0Nn"/>
+                        <outlet property="userImg" destination="A5G-Hw-ul6" id="jM8-xx-LdW"/>
+                        <outlet property="usernameTxt" destination="9mR-A0-Tuy" id="W7w-yM-Dn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFj-EV-NIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

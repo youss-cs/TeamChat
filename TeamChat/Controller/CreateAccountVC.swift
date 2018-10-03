@@ -10,21 +10,39 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
 
+    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var userImg: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func ChooseAvatarPressed(_ sender: Any) {
     }
-    */
+    
+    @IBAction func generateBGColorPressed(_ sender: Any) {
+    }
+    
+    @IBAction func createAccPressed(_ sender: Any) {
+        guard let email = emailTxt.text, email != "" else { return }
+        guard let password = passwordTxt.text, email != "" else { return }
+        
+        AuthService.instance.registerUser(email: email, password: password) { (success) in
+            if success {
+                AuthService.instance.loginUser(email: email, password: password, completion: { (sucess) in
+                    if success {
+                        //
+                    }
+                })
+            }
+        }
+    }
+    
+    
 
 }
