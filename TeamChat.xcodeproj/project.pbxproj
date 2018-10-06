@@ -17,6 +17,7 @@
 		A1621FF12162A8DF00B7FBA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1621FF02162A8DF00B7FBA1 /* Constants.swift */; };
 		A1621FF32162B7E400B7FBA1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1621FF22162B7E400B7FBA1 /* LoginVC.swift */; };
 		A17F386D2163CC300024CB3A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F386C2163CC300024CB3A /* CreateAccountVC.swift */; };
+		A1971C2F21693C860035571A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1971C2E21693C860035571A /* CircleImage.swift */; };
 		A1AC254A21625DB900F41280 /* GradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC254921625DB900F41280 /* GradienView.swift */; };
 		A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338021610F0A0029060F /* AppDelegate.swift */; };
 		A1F2338621610F0A0029060F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338421610F0A0029060F /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		A1621FF02162A8DF00B7FBA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1621FF22162B7E400B7FBA1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A17F386C2163CC300024CB3A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		A1971C2E21693C860035571A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A1AC254921625DB900F41280 /* GradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienView.swift; sourceTree = "<group>"; };
 		A1F2337D21610F0A0029060F /* TeamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F2338021610F0A0029060F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				A1AC254921625DB900F41280 /* GradienView.swift */,
 				A136A4D22164F8FF00D35F16 /* RoundedButton.swift */,
 				A151ACFA216684D600CB6B5D /* AvatarCell.swift */,
+				A1971C2E21693C860035571A /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				A1621FF12162A8DF00B7FBA1 /* Constants.swift in Sources */,
 				A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */,
 				A151ACF92166815100CB6B5D /* AvatarPickerVC.swift in Sources */,
+				A1971C2F21693C860035571A /* CircleImage.swift in Sources */,
 				A1621FF32162B7E400B7FBA1 /* LoginVC.swift in Sources */,
 				A1AC254A21625DB900F41280 /* GradienView.swift in Sources */,
 				A136A4D32164F8FF00D35F16 /* RoundedButton.swift in Sources */,
