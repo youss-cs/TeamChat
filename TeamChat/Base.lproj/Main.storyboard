@@ -491,9 +491,11 @@
                     <connections>
                         <outlet property="collectionView" destination="b6D-HM-k30" id="58j-nu-c3I"/>
                         <outlet property="segmentControl" destination="6zI-1I-ycl" id="6tu-ic-Cj6"/>
+                        <segue destination="Ffn-OV-OX3" kind="unwind" identifier="createAccountUnwind" unwindAction="createAccountUnwind:" id="zZx-qN-Lqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjf-UW-T0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ffn-OV-OX3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4228" y="805"/>
         </scene>

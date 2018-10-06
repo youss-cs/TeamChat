@@ -15,13 +15,20 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
     
-    let avatarName = "profileDefault"
+    var avatarName = "profileDefault"
     let avatarColor = "[0.5,0.5,0.5,1]"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func createAccountUnwind(_ segue: UIStoryboardSegue) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
     }
     
     @IBAction func ChooseAvatarPressed(_ sender: Any) {
