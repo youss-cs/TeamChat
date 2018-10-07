@@ -19,6 +19,8 @@
 		A17F386D2163CC300024CB3A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F386C2163CC300024CB3A /* CreateAccountVC.swift */; };
 		A1971C2F21693C860035571A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1971C2E21693C860035571A /* CircleImage.swift */; };
 		A1AC254A21625DB900F41280 /* GradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC254921625DB900F41280 /* GradienView.swift */; };
+		A1D0E6AD216A368B00778E07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0E6AB216A368B00778E07 /* ProfileVC.swift */; };
+		A1D0E6AE216A368B00778E07 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D0E6AC216A368B00778E07 /* ProfileVC.xib */; };
 		A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338021610F0A0029060F /* AppDelegate.swift */; };
 		A1F2338621610F0A0029060F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338421610F0A0029060F /* Main.storyboard */; };
 		A1F2338821610F0C0029060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338721610F0C0029060F /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		A17F386C2163CC300024CB3A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		A1971C2E21693C860035571A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A1AC254921625DB900F41280 /* GradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienView.swift; sourceTree = "<group>"; };
+		A1D0E6AB216A368B00778E07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		A1D0E6AC216A368B00778E07 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		A1F2337D21610F0A0029060F /* TeamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F2338021610F0A0029060F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F2338521610F0A0029060F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				A1621FF22162B7E400B7FBA1 /* LoginVC.swift */,
 				A17F386C2163CC300024CB3A /* CreateAccountVC.swift */,
 				A151ACF82166815100CB6B5D /* AvatarPickerVC.swift */,
+				A1D0E6AB216A368B00778E07 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		A1D0E6AF216A369000778E07 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A1D0E6AC216A368B00778E07 /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		A1F2337421610F0A0029060F = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +160,7 @@
 		A1F2337F21610F0A0029060F /* TeamChat */ = {
 			isa = PBXGroup;
 			children = (
+				A1D0E6AF216A369000778E07 /* XIBs */,
 				A136A4CE2164EB6900D35F16 /* Services */,
 				A1621FEF2162A8CE00B7FBA1 /* Utilities */,
 				A15E60B521611F0A0068FA1A /* Model */,
@@ -221,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D0E6AE216A368B00778E07 /* ProfileVC.xib in Resources */,
 				A1F2338B21610F0C0029060F /* LaunchScreen.storyboard in Resources */,
 				A1F2338821610F0C0029060F /* Assets.xcassets in Resources */,
 				A1F2338621610F0A0029060F /* Main.storyboard in Resources */,
@@ -283,6 +298,7 @@
 			files = (
 				A1621FF12162A8DF00B7FBA1 /* Constants.swift in Sources */,
 				A15E60B921611F5A0068FA1A /* ChatVC.swift in Sources */,
+				A1D0E6AD216A368B00778E07 /* ProfileVC.swift in Sources */,
 				A151ACF92166815100CB6B5D /* AvatarPickerVC.swift in Sources */,
 				A1971C2F21693C860035571A /* CircleImage.swift in Sources */,
 				A1621FF32162B7E400B7FBA1 /* LoginVC.swift in Sources */,

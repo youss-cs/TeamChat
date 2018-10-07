@@ -127,6 +127,7 @@
                     <navigationItem key="navigationItem" id="y0s-Il-3Se"/>
                     <connections>
                         <outlet property="loginBtn" destination="gHD-KD-yRU" id="ZSn-Pr-QwA"/>
+                        <outlet property="userImg" destination="M9l-8c-Z7z" id="D2y-5n-5iS"/>
                         <segue destination="osw-b4-Gdz" kind="show" identifier="toLogin" id="ZpH-M5-rzW"/>
                     </connections>
                 </viewController>
@@ -167,6 +168,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="osw-b4-Gdz" eventType="touchUpInside" id="GRh-yd-aPv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGM-b6-6Q2">
                                 <rect key="frame" x="88" y="310" width="199" height="26"/>
@@ -211,6 +215,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iKf-Ql-nLE">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -220,6 +228,8 @@
                             <constraint firstItem="cGM-b6-6Q2" firstAttribute="centerX" secondItem="SRa-ud-gpo" secondAttribute="centerX" id="FmA-sq-Tfy"/>
                             <constraint firstItem="edG-Aq-HB1" firstAttribute="centerX" secondItem="SRa-ud-gpo" secondAttribute="centerX" id="IIs-Mj-sXZ"/>
                             <constraint firstItem="e6d-ZN-OT6" firstAttribute="top" secondItem="VlK-jJ-48k" secondAttribute="top" constant="40" id="PxV-Z5-M37"/>
+                            <constraint firstItem="iKf-Ql-nLE" firstAttribute="centerX" secondItem="SRa-ud-gpo" secondAttribute="centerX" id="SGe-Hs-6vp"/>
+                            <constraint firstItem="iKf-Ql-nLE" firstAttribute="centerY" secondItem="SRa-ud-gpo" secondAttribute="centerY" constant="-100" id="Tc3-1D-ycb"/>
                             <constraint firstItem="jDr-5y-g7n" firstAttribute="top" secondItem="edG-Aq-HB1" secondAttribute="bottom" constant="40" id="kew-AL-zlF"/>
                             <constraint firstItem="cGM-b6-6Q2" firstAttribute="top" secondItem="jDr-5y-g7n" secondAttribute="bottom" id="wZh-56-Agc"/>
                         </constraints>
@@ -227,10 +237,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="c9H-lG-kGA"/>
                     <connections>
+                        <outlet property="passwordTxt" destination="Ko5-CX-Ix6" id="iW8-Al-aCt"/>
+                        <outlet property="spinner" destination="iKf-Ql-nLE" id="xcO-9H-3QR"/>
+                        <outlet property="usernameTxt" destination="Urf-qO-c6L" id="U33-sn-dt8"/>
                         <segue destination="Crd-iX-Zcg" kind="show" identifier="toCreateAcc" id="Kor-CI-jQC"/>
+                        <segue destination="PZm-xj-PrS" kind="unwind" identifier="chatUnwind" unwindAction="chatUnwind:" id="bjS-K3-vFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YO9-x8-Vxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PZm-xj-PrS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2666" y="805"/>
         </scene>
@@ -415,7 +430,7 @@
                         <outlet property="spinner" destination="2Ic-hJ-jcr" id="bFS-5w-Oto"/>
                         <outlet property="userImg" destination="A5G-Hw-ul6" id="jM8-xx-LdW"/>
                         <outlet property="usernameTxt" destination="9mR-A0-Tuy" id="W7w-yM-Dn3"/>
-                        <segue destination="8Hj-cd-T3R" kind="unwind" identifier="unwindChannel" unwindAction="channelUnwind:" id="QfM-re-3xD"/>
+                        <segue destination="8Hj-cd-T3R" kind="unwind" identifier="chatUnwind" unwindAction="chatUnwind:" id="QfM-re-3xD"/>
                         <segue destination="97a-6G-4in" kind="show" identifier="toAvatarPicker" id="eTd-eh-oeb"/>
                     </connections>
                 </viewController>

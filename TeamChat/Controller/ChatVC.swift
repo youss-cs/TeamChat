@@ -16,6 +16,16 @@ class ChatVC: UIViewController {
         
         SideMenuManager.default.menuFadeStatusBar = false
         SideMenuManager.default.menuWidth = self.view.bounds.width - 40
+        
+        if AuthService.instance.isLoggedIn {
+            AuthService.instance.findUserByEmail(completion: { (success) in
+                if success {
+                    NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGED, object: nil)
+                }
+            })
+        }
     }
+    
+    @IBAction func chatUnwind(_ segue: UIStoryboardSegue) { }
 
 }
