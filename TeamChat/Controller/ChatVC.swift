@@ -24,6 +24,8 @@ class ChatVC: UIViewController {
                 }
             })
         }
+        
+        MessageService.instance.getchannels { (success) in }
     }
     
     @IBAction func chatUnwind(_ segue: UIStoryboardSegue) { }
