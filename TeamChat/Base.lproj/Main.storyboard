@@ -54,6 +54,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbi-4J-GhT">
                                 <rect key="frame" x="333" y="79" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="4HY-Ni-lMN" eventType="touchUpInside" id="JfQ-ga-ZyC"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="M9l-8c-Z7z" customClass="CircleImage" customModule="TeamChat" customModuleProvider="target">
                                 <rect key="frame" x="20" y="572" width="75" height="75"/>
