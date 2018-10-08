@@ -26,9 +26,15 @@ class AddChannelVC: UIViewController {
     }
     
     @IBAction func createChannelPressed(_ sender: Any) {
-        //UserDataService.instance.logoutUser()
-        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGED, object: nil)
-        self.dismiss(animated: true, completion: nil)
+        guard let name = usernameTxt.text, name != "" else { return }
+        guard let desc = descTxt.text, desc != "" else { return }
+        
+        SocketService.instance.addChannel(name: name, description: desc) { (success) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        
     }
     
     func setupView() {

@@ -56,7 +56,7 @@
                                     <rect key="frame" x="0.0" y="91" width="250" height="17"/>
                                     <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-yf-QH8">
                                     <rect key="frame" x="0.0" y="122" width="250" height="2"/>

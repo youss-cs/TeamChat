@@ -25,6 +25,7 @@ let purplePlaceHolder = #colorLiteral(red: 0.3647058824, green: 0.4039215686, bl
 
 //Notifications
 let NOTIF_USER_DATA_DID_CHANGED = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("notifChannelSelected")
 
 //Segues
 let TO_LOGIN = "toLogin"
