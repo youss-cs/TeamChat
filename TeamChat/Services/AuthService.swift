@@ -109,7 +109,7 @@ class AuthService {
     }
     
     func findUserByEmail(completion: @escaping CompletionHandler) {
-        Alamofire.request("\(USER_BY_EMAIL_URL)\(userEmail)", method: .get, headers: BEARER_HEADER).responseJSON { (response) in
+        Alamofire.request("\(USER_BY_EMAIL_URL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
                 guard let data = response.result.value else { return }

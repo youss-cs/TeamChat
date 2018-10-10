@@ -27,6 +27,9 @@
 		A1AC254A21625DB900F41280 /* GradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC254921625DB900F41280 /* GradienView.swift */; };
 		A1D0E6AD216A368B00778E07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0E6AB216A368B00778E07 /* ProfileVC.swift */; };
 		A1D0E6AE216A368B00778E07 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D0E6AC216A368B00778E07 /* ProfileVC.xib */; };
+		A1EE7E4D216E50B800023C6E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE7E4C216E50B800023C6E /* Message.swift */; };
+		A1EE7E4F216E6E6000023C6E /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE7E4E216E6E6000023C6E /* KeyboardBoundView.swift */; };
+		A1EE7E51216E796500023C6E /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE7E50216E796500023C6E /* MessageCell.swift */; };
 		A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2338021610F0A0029060F /* AppDelegate.swift */; };
 		A1F2338621610F0A0029060F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338421610F0A0029060F /* Main.storyboard */; };
 		A1F2338821610F0C0029060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F2338721610F0C0029060F /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		A1AC254921625DB900F41280 /* GradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienView.swift; sourceTree = "<group>"; };
 		A1D0E6AB216A368B00778E07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A1D0E6AC216A368B00778E07 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		A1EE7E4C216E50B800023C6E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A1EE7E4E216E6E6000023C6E /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		A1EE7E50216E796500023C6E /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		A1F2337D21610F0A0029060F /* TeamChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F2338021610F0A0029060F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F2338521610F0A0029060F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +134,8 @@
 				A151ACFA216684D600CB6B5D /* AvatarCell.swift */,
 				A1971C2E21693C860035571A /* CircleImage.swift */,
 				A1874E9C216A6CA70094D14D /* ChannelCell.swift */,
+				A1EE7E4E216E6E6000023C6E /* KeyboardBoundView.swift */,
+				A1EE7E50216E796500023C6E /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A1874E98216A68160094D14D /* Channel.swift */,
+				A1EE7E4C216E50B800023C6E /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,12 +335,15 @@
 				A1AC254A21625DB900F41280 /* GradienView.swift in Sources */,
 				A136A4D32164F8FF00D35F16 /* RoundedButton.swift in Sources */,
 				A17F386D2163CC300024CB3A /* CreateAccountVC.swift in Sources */,
+				A1EE7E51216E796500023C6E /* MessageCell.swift in Sources */,
 				A151ACF42166689F00CB6B5D /* UserDataService.swift in Sources */,
 				A1584176216BAC5300AA4F8F /* AddChannelVC.swift in Sources */,
 				A1874E9D216A6CA70094D14D /* ChannelCell.swift in Sources */,
 				A15E60B721611F510068FA1A /* ChannelVC.swift in Sources */,
 				A1F2338121610F0A0029060F /* AppDelegate.swift in Sources */,
 				A151ACFB216684D600CB6B5D /* AvatarCell.swift in Sources */,
+				A1EE7E4F216E6E6000023C6E /* KeyboardBoundView.swift in Sources */,
+				A1EE7E4D216E50B800023C6E /* Message.swift in Sources */,
 				A136A4D02164EBEB00D35F16 /* AuthService.swift in Sources */,
 				A1584179216BB82100AA4F8F /* SocketService.swift in Sources */,
 			);
