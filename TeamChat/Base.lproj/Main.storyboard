@@ -40,14 +40,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="80" id="l7q-vZ-cD6" customClass="MessageCell" customModule="Smack" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="80" id="l7q-vZ-cD6" customClass="MessageCell" customModule="TeamChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7q-vZ-cD6" id="Rna-jl-M4A">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-se-46h" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-se-46h" customClass="CircleImage" customModule="TeamChat" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="11" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="4NI-Y8-0op"/>
@@ -76,6 +76,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="8Je-yX-4fu" secondAttribute="bottom" constant="15" id="3pR-ku-V45"/>
                                                 <constraint firstItem="bcw-se-46h" firstAttribute="top" secondItem="Rna-jl-M4A" secondAttribute="topMargin" id="9Tl-oL-BEg"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ebp-WX-2Uk" secondAttribute="trailing" constant="20" symbolic="YES" id="Af7-WN-LwE"/>
                                                 <constraint firstItem="8Je-yX-4fu" firstAttribute="top" secondItem="f8e-f0-TXh" secondAttribute="bottom" constant="8" id="Fbi-SO-9Uw"/>
                                                 <constraint firstItem="bcw-se-46h" firstAttribute="leading" secondItem="Rna-jl-M4A" secondAttribute="leadingMargin" id="Ggz-Gq-K03"/>
                                                 <constraint firstItem="Ebp-WX-2Uk" firstAttribute="leading" secondItem="f8e-f0-TXh" secondAttribute="trailing" constant="6" id="JOj-hb-Npl"/>
@@ -95,9 +96,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-an-NqJ">
+                                <rect key="frame" x="8" y="623" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GwW-cp-5wr" firstAttribute="top" secondItem="nRg-an-NqJ" secondAttribute="bottom" constant="4" id="3AW-OQ-X02"/>
                             <constraint firstItem="GwW-cp-5wr" firstAttribute="top" secondItem="4He-Tk-5Te" secondAttribute="bottom" constant="30" id="4FI-hS-Hup"/>
                             <constraint firstItem="GwW-cp-5wr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AFx-CF-d0X"/>
                             <constraint firstItem="4He-Tk-5Te" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bss-nL-zC7"/>
@@ -106,6 +114,7 @@
                             <constraint firstAttribute="trailing" secondItem="0Ds-ny-M3o" secondAttribute="trailing" constant="8" id="eqF-Hy-dAg"/>
                             <constraint firstItem="0Ds-ny-M3o" firstAttribute="centerY" secondItem="GwW-cp-5wr" secondAttribute="centerY" id="iRn-Ws-CY3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GwW-cp-5wr" secondAttribute="trailing" id="jiW-0j-on5"/>
+                            <constraint firstItem="nRg-an-NqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="suQ-Qv-q49"/>
                             <constraint firstItem="4He-Tk-5Te" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xNG-65-SiK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -121,6 +130,7 @@
                         <outlet property="messageTxtBox" destination="GwW-cp-5wr" id="EZM-mR-kQv"/>
                         <outlet property="sendBtn" destination="0Ds-ny-M3o" id="GF8-G2-maq"/>
                         <outlet property="tableView" destination="4He-Tk-5Te" id="eWy-ya-XZC"/>
+                        <outlet property="typingLbl" destination="nRg-an-NqJ" id="Rw8-hf-pS8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

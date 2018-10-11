@@ -23,9 +23,16 @@ class ChannelCell: UITableViewCell {
         layer.backgroundColor = selected ? UIColor(white: 1, alpha: 0.2).cgColor : UIColor.clear.cgColor
     }
     
-    func configureCell(channel: Channel) {
+    func configureCell(channel : Channel) {
         let title = channel.title ?? ""
         channelName.text = "#\(title)"
+        channelName.font = UIFont(name: "HelveticaNeue-Regular", size: 17)
+        
+        for id in MessageService.instance.unreadChannels {
+            if id == channel.id {
+                channelName.font = UIFont(name: "HelveticaNeue-Bold", size: 17)
+            }
+        }
     }
 
 }
